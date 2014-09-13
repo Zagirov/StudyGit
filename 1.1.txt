@@ -1,1 +1,33 @@
 Урок 1
+git help
+git config --global user.name "Макс Загиров"
+Делаем первоначальные настройки
+git config --global user.email max.zagirov@gmail.com
+git config --global color.ui true
+
+Создаем каталог lesson1 и инициализируем хранилище
+git init
+git status
+
+С помощью vim добавляем файлы и регистрируем их в кэше
+git add Readme.txt
+git status
+Комитим этот файл
+git commit -m "Добавил первый файл"
+git status
+Добавляем два файл 1 и 2 и комитим их все
+git add -all
+git log
+Добавляем еще два файлв 3 4 и комитим их через список
+git add <list of files> Добавим все файлы чередующие через пробел
+git add --all Добавим все файлы
+Добавляем файлы 1.txt, 2.txt добавляем директорию docs и в ней 
+добавляем файлы 3.txt, 4.txt добавляем их через *.txt   11 22 
+добавляем всю директорию 
+git add *.txt Добавим все файлы в текущей директории с расширением txt
+git add docs/*.txt Добавим все txt файлы в директории docs
+git add docs/ Добавим все файлы в директории docs
+Добавляем директорию mocs в ней файлы 44.txt и добавлем их через "*.txt"
+git add "*.txt" Добавим все файлы в проекте с расширениме txt
+
+
