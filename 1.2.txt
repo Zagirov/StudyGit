@@ -1,0 +1,56 @@
+1.	Чтобы посмотреть изменения в рабочем дереве которые еще не помещены в кэш
+	Предположение: Сравшения изменений файлов относительно индекса,
+	файлы которые не попадут вместе комитом, еще не добавленны
+	git diff
+
+	Изменения между индексом и последним коммитом, они попадут в месте с коммитом
+	git diff --staged
+	git diff --cached
+
+	Чтобы сравнить рабочее дерево с последним коммитом 
+	git diff HEAD
+	git status
+	Тренировка: Создаем папку 2.1, создаем хранилище, 
+	1.добавляем два файла, сравниваем,
+	2.добавляем 1 в индекс, сравниваем, сравниваем --staged --cached
+	3.Сравниваем рабочее дерево с последним коммитом
+
+Для того чтобы помещеные файлы в кэш вернуть в исходное состояние
+git reset HEAD Имя файла
+git status
+
+Проверить это должно перезаписать файл который не в кеше
+git checkout -- ИмяФайла
+
+git commit -a -m "asdfasdf"
+
+git reset --soft HEAD^
+
+git add ИмяФайла
+git commit --amend -m "что-то там сделал"
+
+git reset --soft HEAD^ Undo last commit, put changes into staging
+git commit --amend -m "New message"
+git reset --hard HEAD^ Undo last commit and all changes
+git reset --hard HEAD^ Undo last 2 commit and all changes
+
+git remote
+Hosted - GitHub, BitBucket
+Self Managed - Gitosis, Gitorious
+
+git remote add origin https://github.com/Gregg/git-real.git
+git remote -v
+
+git push -u origin master Закидываем ветку мастер в удаленый репозиторий
+
+git pull -получаем обновления из репозитория обратно
+
+git remote add <name> <adress>
+git remote rm <name>
+git push -u <name> <branch>
+
+HEROKU
+heroku create
+git remote -v
+git push heroku master
+
