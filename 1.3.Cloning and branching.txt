@@ -1,0 +1,13 @@
+1.Клонирование	
+	git clone <url>
+	git clon <url> <name>
+	git remote -v
+	
+2.Ветвление 
+	git branch <name>
+	git branch
+	git checkout <name of branch>
+	git merge
+	git branch -b <name of branch>
+	git checkout -b <name of branch>
+
