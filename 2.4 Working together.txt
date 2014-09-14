@@ -1,0 +1,10 @@
+git config --global core.autocrlf input
+git config --global core.autocrlf true
+.gitattributes
+
+git cherry-pick <hash of commit>
+git cherry-pick --edit <hash of commit>
+git cherry-pick --no-commit <1 commit> <2 commit>
+git cherry-pick -x <hash of commit>
+git cherry-pick --signoff <hash commit>
+

@@ -1,0 +1,8 @@
+git clone <источник> <приемник>
+git filter-branch --tree-filter <Команда>
+--tree-filter 'rm -f passwords.txt'
+--tree-filter 'find . -name "*.mp4" -exec rm{}\;'
+git filter-branch --tree-filter 'rm -f passwords.txt' -- --all
+git filter-branch --index-filter <команда>
+git filter-branch -f --prune-empty -- --all
+

@@ -1,0 +1,15 @@
+git stash save сохраняет во временную область измененые файлы и востанавливает последний коммит
+git stash apply
+git stash list
+git stash apply <имя снимка изменений>
+git stash drop
+git stash pop
+git stash save --keep-index
+git stash save --include-untracked
+git stash list --stat
+git stash show <имя списка>
+git stash show --patch
+git stash save 
+Работа при удалении ветки
+git stash clear
+
