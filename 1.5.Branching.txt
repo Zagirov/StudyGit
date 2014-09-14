@@ -1,0 +1,22 @@
+Удаленные ветки
+git checkout -b shopping_cart
+делаем ветку удаленной
+git push origin shopping_cart
+
+
+git pull увидим удаленую новую ветку
+git branch -r посмотреть все удаленные ветки
+git checkout shopping_cart переключились на удаленную ветку
+git remote show origin посмотреть все ветки удаленного репозитория
+
+git push origin :shopping_cart вроде как удаление удаленной ветки
+git remote prune origin очистка от удаленных веток в настройках
+
+git push heroku-stagin stagin:master
+
+git tag
+git chechout <tag>
+
+git tag -a v0.0.2 -m "Версия 0,0,3" добавление новой метки
+git push --tags
+
