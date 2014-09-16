@@ -1,0 +1,4 @@
+git reflog
+git log --walk-reflogs
+git branch <name of branch> <last commit to restore>
+
